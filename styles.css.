@@ -2,14 +2,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: #333;
+    color: #fff;
     padding: 10px 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 14px;
 }
 
 nav ul {
@@ -24,11 +36,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -38,12 +55,43 @@ nav ul li a {
     padding: 20px;
 }
 
-.intro {
+.intro, section {
     padding: 20px;
-    text-align: center;
+    margin: 10px 0;
 }
 
 section {
     padding: 20px;
     margin: 10px 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #333;
+}
+
+blockquote {
+    border-left: 10px solid #333;
+    margin: 10px 0;
+    padding-left: 10px;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
 }
